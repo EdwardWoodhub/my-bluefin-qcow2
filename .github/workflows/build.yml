@@ -84,7 +84,7 @@ jobs:
       - name: Build QCOW2
         # 我们使用红帽官方推荐的 bootc 镜像构建工具（容器版运行）
         run: |
-        # 【新增：安装 qemu-img 工具包】
+          # 【新增：安装 qemu-img 工具包】
           echo "正在安装 qemu-utils..."
           sudo apt-get update && sudo apt-get install -y qemu-utils
           
