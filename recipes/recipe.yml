@@ -122,7 +122,7 @@ modules:
         cat <<EOF > /etc/sddm.conf.d/autologin.conf
         [Autologin]
         User=edward
-        Session=lxqt
+        Session=lxqt-wayland
         [General]
         DisplayServer=wayland
         EOF
