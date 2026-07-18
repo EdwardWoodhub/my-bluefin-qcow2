@@ -103,7 +103,7 @@ modules:
     snippets:
       - |
         echo "WLR_NO_HARDWARE_CURSORS=1" >> /etc/environment
-        echo "XDG_CURRENT_DESKTOP=Budgie:GNOME" >> /etc/environment
+        echo "XDG_CURRENT_DESKTOP=LXQt:labwc:wlroots" >> /etc/environment
         echo "XDG_SESSION_TYPE=wayland" >> /etc/environment
       
       # --- 关键修复：手动创建 Linger 文件，代替 loginctl 命令 ---
@@ -122,7 +122,7 @@ modules:
         cat <<EOF > /etc/sddm.conf.d/autologin.conf
         [Autologin]
         User=edward
-        Session=budgie-desktop
+        Session=lxqt
         [General]
         DisplayServer=wayland
         EOF
